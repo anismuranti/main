@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('Asia/Jakarta');
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, "https://mall.shopee.co.id/api/v2/item/get?itemid=3710279742&shopid=83382147");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
