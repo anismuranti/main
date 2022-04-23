@@ -1,7 +1,6 @@
 <?php
-while(true){
+
 $TOKEN = "5341869290:AAFAH-BDf9VWbUhDu9CKGAhykzUK4KklQg0";
-$id = "";
 
 
 $headers = array(
@@ -34,8 +33,7 @@ $url = "https://api.telegram.org/bot" . $TOKEN . "/". $method;	$post = [ 		'chat
 
 
 }
-sleep(300);
-}
+
 
 
 
