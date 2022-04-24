@@ -17,7 +17,7 @@ $js = json_decode($res,true);
 $name = $js["data"]["5"]["redEnvelopeVO"]["nameId"];
 $stock = $js["data"]["5"]["redEnvelopeVO"]["remainNum"];
 echo "[<>] NAME => $name\n";
-if($stock == "1"){
+if($stock == "1" | $stock == "0" ){
 echo "[<>] STOCK => ABIS\n";
 }else{
 echo "[<>] STOCK => $stock\n";
