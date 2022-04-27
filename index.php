@@ -15,11 +15,9 @@ $url = "https://app.oneaset.co.id/api/app/biz/activity/master/user/task/list?act
 $res = curl($url,$headers,"get");
 $js = json_decode($res,true);
 $name = $js["data"]["5"]["redEnvelopeVO"]["nameId"];
-$stock = $js["data"]["5"]["redEnvelopeVO"]["remainNum"];
+$stock = $js["data"]["5"]["redEnvelopeVO"]["amount"];
 echo "[<>] NAME => $name\n";
-if($stock == "1" | $stock == "0" ){
-echo "[<>] STOCK => ABIS\n";
-}else{
+if($stock > 10){
 echo "[<>] STOCK => $stock\n";
 
 
